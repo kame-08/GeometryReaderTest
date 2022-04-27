@@ -7,28 +7,39 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @ObservedObject
+    var viewModel = ContentViewModel()
     var body: some View {
         
-        GeometryReader { geometry in
-            var idoux=0
-            //画面横幅
-            let width = UIScreen.main.bounds.width
-            //画面高さ
-            let height = UIScreen.main.bounds.height
-            //x座標
-            let xzahyou = geometry.frame(in: .global).origin.x
-            //y座標
-            let yzahyou = geometry.frame(in: .global).origin.y
+        VStack{
             
-            Text("X: \(xzahyou)\nY: \(yzahyou)\nwidth: \(geometry.frame(in: .global).width)\nheight: \(geometry.frame(in: .global).height)\nmaxY: \(Int(geometry.frame(in: .local).maxY))\n\(height)\n\(width)")
-                .font(.largeTitle)
+            Button("Button") {
+                viewModel.plus()
+            }
             
-            //.frame(width:width, height: height)
-                .offset(x: CGFloat(idoux), y: 0)
-                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+            ScrollView{
+                GeometryReader { geometry in
+                    
+                    //画面横幅
+                    let width = UIScreen.main.bounds.width
+                    //画面高さ
+                    let height = UIScreen.main.bounds.height
+                    //x座標
+                    var xzahyou = geometry.frame(in: .global).origin.x
+                    //y座標
+                    let yzahyou = geometry.frame(in: .global).origin.y
+                    
+                    Text("X: \(xzahyou)\nY: \(yzahyou)\nwidth: \(geometry.frame(in: .global).width)\nheight: \(geometry.frame(in: .global).height)\nmaxY: \(Int(geometry.frame(in: .local).maxY))\n\(height)\n\(width)")
+                        .font(.largeTitle)
+                        .frame(width:width, height: height/2)
+                        .offset(x: 0, y: CGFloat(viewModel.idoux))
+                        .animation(Animation.linear)
+                    
+                }
+            }.edgesIgnoringSafeArea(.all)
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

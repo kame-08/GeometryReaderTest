@@ -12,15 +12,17 @@
 		2AC4D4FF2818284700CE057B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4D4FE2818284700CE057B /* ContentView.swift */; };
 		2AC4D5012818284A00CE057B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4D5002818284A00CE057B /* Assets.xcassets */; };
 		2AC4D5042818284A00CE057B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4D5032818284A00CE057B /* Preview Assets.xcassets */; };
+		2AE289882818D135004DE3A1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE289872818D135004DE3A1 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A9411EA2818C6B700EF6765 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2AC4D4F92818284700CE057B /* GeometryReaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryReaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC4D4FC2818284700CE057B /* GeometryReaderTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderTestApp.swift; sourceTree = "<group>"; };
-		2AC4D4FE2818284700CE057B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AC4D4FE2818284700CE057B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		2AC4D5002818284A00CE057B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC4D5032818284A00CE057B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AE289872818D135004DE3A1 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				2AC4D4FC2818284700CE057B /* GeometryReaderTestApp.swift */,
 				2AC4D4FE2818284700CE057B /* ContentView.swift */,
+				2AE289872818D135004DE3A1 /* ContentViewModel.swift */,
 				2A9411EA2818C6B700EF6765 /* Model.swift */,
 				2AC4D5002818284A00CE057B /* Assets.xcassets */,
 				2AC4D5022818284A00CE057B /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				2A9411EB2818C6B700EF6765 /* Model.swift in Sources */,
 				2AC4D4FF2818284700CE057B /* ContentView.swift in Sources */,
+				2AE289882818D135004DE3A1 /* ContentViewModel.swift in Sources */,
 				2AC4D4FD2818284700CE057B /* GeometryReaderTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
