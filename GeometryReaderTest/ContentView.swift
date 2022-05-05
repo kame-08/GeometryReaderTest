@@ -35,11 +35,11 @@ struct ContentView: View {
                     
                         .offset(x: CGFloat(viewModel.xzahyou), y: CGFloat(viewModel.yzahyou))
                         .animation(.linear.speed(0.5))
-//                        .animation(.linear, value: viewModel.yzahyou)
+                    //                        .animation(.linear, value: viewModel.yzahyou)
                     //
                     //
-//
-//                        .animation(.linear, value: viewModel.xzahyou)
+                    //
+                    //                        .animation(.linear, value: viewModel.xzahyou)
                     
                 }.frame(height: CGFloat(viewModel.imageX))
                 
